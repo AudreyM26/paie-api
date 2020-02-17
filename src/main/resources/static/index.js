@@ -130,6 +130,11 @@ function afficheBulletinSalaire(){
 	        
 	        document.getElementById("periode").innerHTML = "Du "+datDebutFormat+" au "+datFinFormat;
 	        
+	        document.getElementById("base").innerHTML = bulletin.remunerationEmploye.matricule;
+	        document.getElementById("taux_salarial").innerHTML = bulletin.remunerationEmploye.matricule;
+	        document.getElementById("salaire_base").innerHTML = bulletin.salaireBase;
+	        
+	        document.getElementById("montant_prime").innerHTML = bulletin.primeExceptionnelle;
 	        
 	       for (var prop in bulletin) {
 	        	

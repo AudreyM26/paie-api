@@ -8,6 +8,7 @@ public class BulletinSalaireRequest {
 	private Integer id;
 	private RemunerationEmploye remunerationEmploye;
 	private Periode periode;
+	private BigDecimal primeExceptionnelle;
 	private BigDecimal salaireBase;
 	private BigDecimal salaireBrut;
 	private BigDecimal TotalRetenueSalariale;
@@ -51,6 +52,18 @@ public class BulletinSalaireRequest {
 	 */
 	public void setPeriode(Periode periode) {
 		this.periode = periode;
+	}
+	/**
+	 * @return the primeExceptionnelle
+	 */
+	public BigDecimal getPrimeExceptionnelle() {
+		return primeExceptionnelle;
+	}
+	/**
+	 * @param primeExceptionnelle the primeExceptionnelle to set
+	 */
+	public void setPrimeExceptionnelle(BigDecimal primeExceptionnelle) {
+		this.primeExceptionnelle = primeExceptionnelle;
 	}
 	/**
 	 * @return the salaireBase
